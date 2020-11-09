@@ -9,3 +9,28 @@
 
 <img src="img/model.PNG" alt="model" style="zoom: 80%;" />
 
+```bash
+# 코드 구성 
+code/
+	darnn/             # Dual stage Attention
+		constants.py
+		custom_types.py
+		main.py
+		modules.py
+		utils.py
+		
+	data_pre/          # Data Preprocessing 
+		numeric_preprocessing.py
+		text_preprocessing.py
+
+	han/               # Hierarchical Attention Network
+		HAN_model.py
+
+	naver_crawler/     # Naver News Crawler using Scrapy
+
+	service/           # Send message using Telegram
+		telegram.py
+		
+	main.py            # Main code
+```
+
