@@ -2,29 +2,7 @@
 # 설치필요
 # get_ipython().system('pip install python-telegram-bot')
 
-
-# 처음 챗봇 만들 때 필요한 코드
-# 우리는 이미 채널을 개설해서 추가 실행 필요없음
-
-# import telegram
-
-# telgm_token = '1314835737:AAFgivmVXKs9SDMvd5gv-ji7MGgy9EVk7WU'
-
-# bot = telegram.Bot(token = telgm_token)
-
-# updates = bot.getUpdates()
-
-# print(updates)
-
-# for i in updates:
-#     print(i)
-
-# print('start telegram chat bot')
-# telegram chatbot ID : '676149244'
-
-
 #  챗봇 메시지 작성 및 전송
-
 import telegram
 import pandas as pd
 import numpy as np
@@ -44,10 +22,9 @@ for i in range(len(top_news)):
 
 
 def telegram_main():
-    telgm_token = '1314835737:AAFgivmVXKs9SDMvd5gv-ji7MGgy9EVk7WU'
+    telgm_token = 'INSERT TOKEN'
     bot = telegram.Bot(token = telgm_token)
-    bot.sendMessage(chat_id = '@multi_campus_exchange_rate', text=sentence)
-#     bot.send_photo(chat_id = '@multi_campus_exchange_rate', photo=open(image_path, 'rb'))
+    bot.sendMessage(chat_id = 'INSERT CHATBOT ID', text=sentence)
     print('성공')
 
 telegram_main()
